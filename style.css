@@ -1,6 +1,7 @@
-*{
+* {
 	scroll-behavior: smooth;
 }
+
 body {
 	font-family: 'Roboto', sans-serif;
 	transition: all 0.5s;
@@ -771,13 +772,16 @@ a {
 	box-shadow: none;
 	border: none;
 }
+
 span.badge {
 	margin-left: 10px;
 }
-.carousel-caption h3 , p{
-	color:#0edefe;
+
+.carousel-caption h3, p {
+	color: #0edefe;
 }
-#btnTop{
+
+#btnTop {
 	position: fixed;
 	bottom: 20px;
 	right: 25px;
@@ -786,11 +790,13 @@ span.badge {
 	border-radius: 80%;
 	background-color: beige;
 }
+
 #btnTop img {
 	width: 25px;
 	height: auto;
 	background-color: beige;
 }
+
 @media (min-width:1400px) {
 	.container {
 		max-width: 1140px !important;
@@ -878,5 +884,6 @@ span.badge {
 		margin-top: 15px;
 		text-align: left;
 	}
+
 
 }
