@@ -1,3 +1,6 @@
+*{
+	scroll-behavior: smooth;
+}
 body {
 	font-family: 'Roboto', sans-serif;
 	transition: all 0.5s;
@@ -364,7 +367,7 @@ a {
 	display: inline-block;
 	line-height: 33px;
 	border-radius: 50%;
-	font-size: 13px;
+	font-size: 25px;
 	transition: all 0.5s;
 }
 
@@ -768,7 +771,26 @@ a {
 	box-shadow: none;
 	border: none;
 }
-
+span.badge {
+	margin-left: 10px;
+}
+.carousel-caption h3 , p{
+	color:#0edefe;
+}
+#btnTop{
+	position: fixed;
+	bottom: 20px;
+	right: 25px;
+	display: none;
+	border: none;
+	border-radius: 80%;
+	background-color: beige;
+}
+#btnTop img {
+	width: 25px;
+	height: auto;
+	background-color: beige;
+}
 @media (min-width:1400px) {
 	.container {
 		max-width: 1140px !important;
