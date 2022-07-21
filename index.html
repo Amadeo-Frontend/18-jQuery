@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
-    <link rel="stylesheet" href="./libs/fontawesome/css>
+    <link rel="stylesheet" href="libs/fontawesome-/css/all.min.css">
     
     <link rel="shortcut icon" href="./img/Logo-ico.png" type="image/x-icon">
     <title>Só naturais</title>
@@ -29,13 +29,13 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Produtos</a>
+                        <a class="nav-link" href="#featured">Produtos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre nós</a>
+                        <a class="nav-link" href="#sobre">Sobre nós</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal" href="#myModal">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -201,14 +201,15 @@
                                         <img src="./img/Logo.png" alt="Logo">
                                     </div>
                                 </div>
+                                
                                 <div class="col-md-12">
-                                    <div class="footer-menu">
+                                    <div class="footer-menu" id="sobre">
                                         <ul>
                                             <li><a href="#">Home</a></li>
                                             <li><a href="#">Help</a></li>
                                             <li><a href="#">Privacy Policy</a></li>
                                             <li><a href="#">How It Works ?</a></li>
-                                            <li><a href="#">Contact Us</a></li>
+                                            <li><a data-bs-toggle="modal" data-bs-target="#myModal" href="#myModal">Contact Us</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -239,12 +240,80 @@
                         </div>
                         <button onclick="backToTop();" id="btnTop"><img src="img/topo.png" alt="topo"></button>
                         
-                        <script src="./libs/jquery-3.6.0.min.js"></script>
-                        <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
-                        <script src="./libs/OwlCarousel2-2.3.4/src/js/owl.carousel.js"></script>
-                        <script src="https://kit.fontawesome.com/052c92928d.js" crossorigin="anonymous"></script>
-                        <script src="./custom.js"></script>
-                    </script>
+                        
+                        
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Preencha o cadastro abaixo:</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <form class="row g-3">
+                                            <div class="col-md-6">
+                                                <label for="inputName" class="form-label">Nome</label>
+                                                <input type="text" class="form-control" id="inputName" placeholder="Nome" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputLast" class="form-label">Sobrenome</label>
+                                                <input type="text" class="form-control" id="inputLast" placeholder="Sobrenome" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="inputEmail" class="form-label">Email</label>
+                                                <input type="email" class="form-control" id="inputEmail" placeholder="Digite seu email" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="inputAddress2" class="form-label">Endereço</label>
+                                                <input type="text" class="form-control" id="inputAddress2" placeholder="Digite seu endereço completo" required>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputCity" class="form-label">Cidade</label>
+                                                <input type="text" class="form-control" id="inputCity" placeholder="Cidade" required>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="inputState" class="form-label">Estado</label>
+                                                <select id="inputState" class="form-select" required>
+                                                    <option selected>Selecione</option>
+                                                    <option value="AC">SP</option>
+                                                    <option value="AL">PR</option>
+                                                    <option value="AP">SC</option>
+                                                    <option value="AM">SP</option>
+                                                    <option value="BA">PR</option>
+                                                    <option value="CE">SC</option>
+                                                    <option value="SP">SP</option>
+                                                    <option value="PR">PR</option>
+                                                    <option value="SC">SC</option> 
+                                                </select>
+                                            </div>
+                                            
+                                            
+                                            <div class="col-12">
+                                                <button type="submit" class="btn btn-primary">Enviar</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     
-                </body>
-                </html>
+                    <script src="./libs/jquery-3.6.0.min.js"></script>
+                    <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
+                    <script src="./libs/OwlCarousel2-2.3.4/src/js/owl.carousel.js"></script>
+                    <script src="https://kit.fontawesome.com/052c92928d.js" crossorigin="anonymous"></script>
+                    <script src="./custom.js"></script>
+                </script>
+                
+            </body>
+            </html>
